@@ -1,23 +1,20 @@
 {
-  "name": "markdown-emoji",
+  "name": "vscode-markdown-it-task-lists",
   "version": "0.1.0",
-  "displayName": "Markdown Emoji",
-  "description": "Adds emoji syntax support to VS Code's built-in markdown preview",
+  "displayName": "vscode-markdown-it-task-lists",
+  "description": "A markdown-it plugin to create GitHub-style task lists",
   "keywords": [
-    "emoji",
     "markdown",
-    "emoticons",
-    "github",
-    "multi-root ready"
+    "markdown-it",
+    "markdown-it-plugin"
   ],
-  "icon": "logo/logox128.png",
-  "publisher": "bierner",
+  "publisher": "ickc",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/mjbvz/vscode-markdown-emoji.git"
+    "url": "https://github.com/ickc/vscode-markdown-it-task-lists.git"
   },
   "bugs": {
-    "url": "https://github.com/mjbvz/vscode-markdown-emoji/issues"
+    "url": "https://github.com/ickc/vscode-markdown-it-task-lists/issues"
   },
   "engines": {
     "vscode": "^1.33.0"
@@ -30,10 +27,7 @@
     "markdown.markdownItPlugins": true
   },
   "main": "./extension.js",
-  "devDependencies": {
-    "@types/vscode": "^1.33.0"
-  },
   "dependencies": {
-    "markdown-it-emoji": "^2.0.0"
+    "markdown-it-task-lists": "^2.0.0"
   }
 }
