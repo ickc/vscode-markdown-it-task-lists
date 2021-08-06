@@ -1,7 +1,7 @@
 {
   "name": "vscode-markdown-it-task-lists",
-  "version": "0.1.0",
-  "displayName": "vscode-markdown-it-task-lists",
+  "version": "0.2.0",
+  "displayName": "Markdown Task Lists",
   "description": "A markdown-it plugin to create GitHub-style task lists",
   "keywords": [
     "markdown",
@@ -22,8 +22,20 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
   "contributes": {
+    "configuration": {
+      "title": "Markdown Task Lists",
+      "properties": {
+        "vscode-markdown-it-task-lists.options": {
+          "type": "object",
+          "default": {},
+          "description": "markdown-it-task-lists options. (see https://github.com/revin/markdown-it-task-lists#usage)."
+        }
+      }
+    },
     "markdown.markdownItPlugins": true
   },
   "main": "./extension.js",
